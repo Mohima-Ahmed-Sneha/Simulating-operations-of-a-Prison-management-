@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_rehabilition_officer.UpdateProgress"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_rehabilitation_officer.update_progressController">
+   <children>
+      <Label layoutX="38.0" layoutY="14.0" text="Update Program Progress" />
+      <Label fx:id="inmateIDL" layoutX="38.0" layoutY="48.0" text="Inmate ID" />
+      <Label fx:id="programmeIDL" layoutX="38.0" layoutY="73.0" text="Programme  ID" />
+      <Label fx:id="attendanceL" layoutX="38.0" layoutY="97.0" text="Attendance (%)" />
+      <Label fx:id="gradeL" layoutX="38.0" layoutY="120.0" text="Grade" />
+      <Label fx:id="scoreL" layoutX="38.0" layoutY="144.0" text="Score" />
+      <TextField fx:id="inmateIDTF" layoutX="147.0" layoutY="44.0" />
+      <TextField fx:id="programmeIDTF" layoutX="147.0" layoutY="69.0" />
+      <TextField fx:id="attendanceTF" layoutX="147.0" layoutY="93.0" />
+      <TextField fx:id="gradeTF" layoutX="147.0" layoutY="116.0" />
+      <TextField fx:id="scoreTF" layoutX="147.0" layoutY="140.0" />
+      <Button layoutX="147.0" layoutY="175.0" mnemonicParsing="false" onAction="#updateProgressOAButton" text="Update Progress" />
+      <Label layoutX="38.0" layoutY="210.0" text="Progress Table" />
+      <TableView fx:id="progressTV" layoutX="37.0" layoutY="229.0" prefHeight="159.0" prefWidth="441.0">
+        <columns>
+          <TableColumn fx:id="inmateIDTC" prefWidth="75.0" text="Inmate_ID" />
+          <TableColumn fx:id="programmeIDTC" prefWidth="95.0" text="Programme_ID" />
+            <TableColumn fx:id="attendanceTC" prefWidth="107.0" text="Attendance(%)" />
+            <TableColumn fx:id="gradeTC" prefWidth="86.0" text="Grade" />
+            <TableColumn fx:id="scoreTC" prefWidth="77.0" text="Score" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
