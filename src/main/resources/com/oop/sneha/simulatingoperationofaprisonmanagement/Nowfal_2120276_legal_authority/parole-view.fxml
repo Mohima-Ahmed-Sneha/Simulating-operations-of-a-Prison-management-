@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_legal_authority.parole_controller">
+   <children>
+      <TextField layoutX="176.0" layoutY="38.0" />
+      <Label layoutX="93.0" layoutY="42.0" text="Work Hours" />
+      <Label layoutX="69.0" layoutY="94.0" text="Education Hours" />
+      <Label layoutX="97.0" layoutY="143.0" text="Infractions" />
+      <TextField layoutX="176.0" layoutY="90.0" />
+      <TextField layoutX="176.0" layoutY="139.0" />
+      <Button layoutX="176.0" layoutY="200.0" mnemonicParsing="false" text="Calculate" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="267.0" prefHeight="110.0" prefWidth="332.0" text="Result" />
+   </children>
+</AnchorPane>

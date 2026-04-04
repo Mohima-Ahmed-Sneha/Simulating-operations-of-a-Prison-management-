@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_legal_authority.lega_authority_controller">
    <children>
       <Label alignment="CENTER" layoutX="175.0" layoutY="14.0" prefHeight="64.0" prefWidth="250.0" style="-fx-background-color: yellow;" text="Legal Authorities" />
@@ -13,7 +12,7 @@
       <Button layoutX="174.0" layoutY="94.0" mnemonicParsing="false" onAction="#ConsultationButton" text="Consultation" />
       <Button layoutX="341.0" layoutY="164.0" mnemonicParsing="false" onAction="#FacilityAuditButton" text="Facility audit" />
       <Button layoutX="301.0" layoutY="94.0" mnemonicParsing="false" onAction="#InterFacilityTransferButton" text="Inter-facility transfer" />
-      <Button layoutX="458.0" layoutY="94.0" mnemonicParsing="false" onAction="#PayroleButton" text="Payrole" />
+      <Button layoutX="458.0" layoutY="94.0" mnemonicParsing="false" onAction="#ParoleButton" text="Parole" />
       <Button layoutX="174.0" layoutY="164.0" mnemonicParsing="false" onAction="#IncidentButton" text="use-of-force incident" />
       <Button layoutX="458.0" layoutY="164.0" mnemonicParsing="false" onAction="#ReleaseButton" text="Release " />
    </children>

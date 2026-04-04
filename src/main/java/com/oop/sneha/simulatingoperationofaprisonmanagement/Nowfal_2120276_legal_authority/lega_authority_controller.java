@@ -17,10 +17,6 @@ public class lega_authority_controller
     }
 
     @javafx.fxml.FXML
-    public void PayroleButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
     public void ConsultationButton(ActionEvent actionEvent) {
     }
 
@@ -38,5 +34,9 @@ public class lega_authority_controller
 
     @javafx.fxml.FXML
     public void InterFacilityTransferButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ParoleButton(ActionEvent actionEvent) {
     }
 }
