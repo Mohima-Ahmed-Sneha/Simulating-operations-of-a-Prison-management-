@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_legal_authority.facilityTransfer_controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="459.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_legal_authority.facilityTransfer_controller">
+   <children>
+      <TextField fx:id="inmateIdText" layoutX="93.0" layoutY="63.0" />
+      <Label alignment="CENTER" layoutX="7.0" layoutY="5.0" prefHeight="56.0" prefWidth="424.0" text="Inter-Facility Transfer" />
+      <Label layoutX="25.0" layoutY="67.0" text="InmateID" />
+      <Label layoutX="31.0" layoutY="107.0" text="Facility" />
+      <Label layoutX="34.0" layoutY="157.0" text="Reason" />
+      <TextField fx:id="reasonText" layoutX="93.0" layoutY="153.0" prefHeight="69.0" prefWidth="150.0" />
+      <ComboBox fx:id="facilityCombobox" layoutX="92.0" layoutY="103.0" prefWidth="150.0" />
+      <Button layoutX="262.0" layoutY="155.0" mnemonicParsing="false" onAction="#trasfersearchButton" prefHeight="70.0" prefWidth="150.0" text="Search" />
+      <TableView fx:id="transferTableview" layoutX="9.0" layoutY="245.0" prefHeight="192.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="prisonaddressTable" prefWidth="139.20001792907715" text="Prison Address" />
+          <TableColumn fx:id="availablebedTable" prefWidth="119.20001220703125" text="Available Bed" />
+            <TableColumn fx:id="trasportteamTable" prefWidth="156.79998779296875" text="Trasport Team" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>

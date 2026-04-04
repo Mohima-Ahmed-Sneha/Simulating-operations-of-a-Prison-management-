@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_accountant_officer.accountant_officer_controller">
    <children>
-      <Button layoutX="65.0" layoutY="103.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="50.0" layoutY="188.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="65.0" layoutY="259.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="193.0" layoutY="103.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="219.0" layoutY="176.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="397.0" layoutY="103.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="387.0" layoutY="175.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="245.0" layoutY="247.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="45.0" layoutY="103.0" mnemonicParsing="false" onAction="#payrollButton" text="Payroll" />
+      <Button layoutX="391.0" layoutY="103.0" mnemonicParsing="false" onAction="#profitmarginButton" text="Profit Margin" />
+      <Button layoutX="45.0" layoutY="162.0" mnemonicParsing="false" onAction="#grantfundingButton" text="Grant Funding" />
+      <Button layoutX="146.0" layoutY="103.0" mnemonicParsing="false" onAction="#trustaccountButton" text="Trust Account" />
+      <Button layoutX="184.0" layoutY="162.0" mnemonicParsing="false" onAction="#vandalismButton" text="Vandalism" />
+      <Button layoutX="270.0" layoutY="103.0" mnemonicParsing="false" onAction="#procurementButton" text="Procurement" />
+      <Button layoutX="429.0" layoutY="162.0" mnemonicParsing="false" onAction="#utilityButton" text="Utility" />
+      <Button layoutX="291.0" layoutY="162.0" mnemonicParsing="false" onAction="#taxcomlianceButton" text="Tax Compliance" />
+      <Label alignment="CENTER" layoutX="17.0" layoutY="21.0" prefHeight="48.0" prefWidth="571.0" style="-fx-background-color: white;" text="Accountant Officer" />
    </children>
 </AnchorPane>

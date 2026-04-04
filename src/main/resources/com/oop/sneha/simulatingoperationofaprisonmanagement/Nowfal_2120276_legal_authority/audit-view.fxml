@@ -5,12 +5,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="258.0" prefWidth="307.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_legal_authority.audit_controller">
    <children>
-      <TextField layoutX="130.0" layoutY="52.0" />
+      <TextField fx:id="temperaturesText" layoutX="130.0" layoutY="52.0" />
       <Label layoutX="24.0" layoutY="56.0" text="Temperatures" />
-      <Button layoutX="121.0" layoutY="129.0" mnemonicParsing="false" text="Calculate" />
-      <Label alignment="CENTER" layoutX="4.0" layoutY="185.0" prefHeight="67.0" prefWidth="298.0" text="Display Result" />
+      <Button layoutX="121.0" layoutY="129.0" mnemonicParsing="false" onAction="#tempcalculateButton" text="Calculate" />
+      <Label fx:id="temperatureLabel" alignment="CENTER" layoutX="4.0" layoutY="185.0" prefHeight="67.0" prefWidth="298.0" text="Display Result" />
    </children>
 </AnchorPane>
