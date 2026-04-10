@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_medical_officer.checkupController">
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_medical_officer.checkupController">
    <children>
-      <Label layoutX="270.0" layoutY="35.0" text="Checkup" />
+      <Label layoutX="181.0" layoutY="27.0" text="Add Check-Up Record">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="inmateIDL" layoutX="44.0" layoutY="69.0" text="Inmate ID" />
+      <Label fx:id="symptomsL" layoutX="41.0" layoutY="108.0" text="Symptoms" />
+      <Label fx:id="statusL" layoutX="44.0" layoutY="145.0" text="Status " />
+      <TextField fx:id="inmateIDTF" layoutX="130.0" layoutY="65.0" />
+      <TextField fx:id="symptomsTF" layoutX="130.0" layoutY="104.0" />
+      <TextField fx:id="statusTF" layoutX="130.0" layoutY="141.0" />
+      <Button layoutX="366.0" layoutY="103.0" mnemonicParsing="false" onAction="#saveRecOAButton" text="Save Record " />
+      <Label layoutX="240.0" layoutY="191.0" text="Check Up Records ">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="checkUpRecTV" layoutX="204.0" layoutY="210.0" prefHeight="158.0" prefWidth="193.0">
+        <columns>
+          <TableColumn fx:id="inmateIDTC" prefWidth="99.0" text="Inmate ID" />
+          <TableColumn fx:id="symptomsTC" prefWidth="93.0" text="Symptoms" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

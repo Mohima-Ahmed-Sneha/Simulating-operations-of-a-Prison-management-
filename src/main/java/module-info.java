@@ -1,6 +1,7 @@
 module com.oop.sneha.simulatingoperationofaprisonmanagement {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens com.oop.sneha.simulatingoperationofaprisonmanagement to javafx.fxml;

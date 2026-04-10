@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_medical_officer.appointmentController">
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_medical_officer.appointmentController">
    <children>
-      <Label layoutX="259.0" layoutY="31.0" text="Appointment" />
+      <Label layoutX="356.0" layoutY="34.0" text="Appointment">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="inmateIDL" layoutX="64.0" layoutY="68.0" text="Inmate ID" />
+      <Label fx:id="dateL" layoutX="66.0" layoutY="108.0" text="Date" />
+      <Label fx:id="timeL" layoutX="68.0" layoutY="143.0" text="Time " />
+      <Label fx:id="statusL" layoutX="388.0" layoutY="135.0" prefHeight="40.0" prefWidth="231.0" />
+      <Button layoutX="426.0" layoutY="96.0" mnemonicParsing="false" onAction="#selectAppOAButton" text="Schedule Appointment" />
+      <TableView fx:id="appListTV" layoutX="154.0" layoutY="240.0" prefHeight="200.0" prefWidth="409.0">
+        <columns>
+          <TableColumn fx:id="inmateIDTC" prefWidth="100.19778442382812" text="Inmate ID" />
+          <TableColumn fx:id="dateTC" prefWidth="106.82218933105469" text="Date" />
+            <TableColumn fx:id="timeTC" prefWidth="102.17779541015625" text="Reason" />
+            <TableColumn fx:id="reasonTC" prefWidth="97.69338989257812" text="Time" />
+        </columns>
+      </TableView>
+      <Label fx:id="appListL" layoutX="306.0" layoutY="216.0" text="Appointment List" />
+      <TextField fx:id="inmateIDTF" layoutX="125.0" layoutY="64.0" />
+      <DatePicker fx:id="dateDP" layoutX="129.0" layoutY="104.0" />
+      <ComboBox fx:id="timeCB" layoutX="128.0" layoutY="138.0" prefWidth="150.0" />
+      <Label fx:id="reasonL" layoutX="68.0" layoutY="174.0" text="Reason" />
+      <TextArea fx:id="reasonTA" layoutX="122.0" layoutY="175.0" prefHeight="53.0" prefWidth="169.0" />
    </children>
 </AnchorPane>
