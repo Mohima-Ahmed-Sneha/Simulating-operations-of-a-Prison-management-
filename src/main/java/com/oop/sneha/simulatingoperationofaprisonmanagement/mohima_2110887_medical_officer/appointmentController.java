@@ -1,8 +1,16 @@
 package com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_medical_officer;
 
+import com.oop.sneha.simulatingoperationofaprisonmanagement.HelloApplication;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -115,5 +123,26 @@ public class appointmentController
         dateDP.setValue(null);
         timeCB.setValue(null);
         reasonTA.clear();
+    }
+
+
+    @javafx.fxml.FXML
+    public void backOAButton(ActionEvent actionEvent) {
+
+        Parent root = null;
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource( "/com/oop/sneha/simulatingoperationofaprisonmanagement/mohima_2110887_medical_officer/medical_officer_dashboard.fxml"));
+            root = fxmlLoader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Medical Officer");
+        stage.show();
+
     }
 }

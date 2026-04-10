@@ -29,7 +29,7 @@ public class LoginController
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void createAccountOAButton(ActionEvent actionEvent) {
     }
 

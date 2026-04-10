@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.LoginController">
    <children>
       <Label layoutX="339.0" layoutY="37.0" text="Login Page ">
@@ -19,7 +18,6 @@
       <Label fx:id="passwordL" layoutX="211.0" layoutY="124.0" text="Password " />
       <TextField fx:id="userIDTF" layoutX="309.0" layoutY="91.0" />
       <Button layoutX="363.0" layoutY="199.0" mnemonicParsing="false" onAction="#loginOAButton" text="Login " />
-      <Button layoutX="590.0" layoutY="363.0" mnemonicParsing="false" onAction="#createAccountOAButton" text="Creat Account " />
       <PasswordField fx:id="passwordPF" layoutX="309.0" layoutY="120.0" />
    </children>
 </AnchorPane>

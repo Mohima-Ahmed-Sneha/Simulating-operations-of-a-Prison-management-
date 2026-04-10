@@ -36,5 +36,6 @@
       <ComboBox fx:id="timeCB" layoutX="128.0" layoutY="138.0" prefWidth="150.0" />
       <Label fx:id="reasonL" layoutX="68.0" layoutY="174.0" text="Reason" />
       <TextArea fx:id="reasonTA" layoutX="122.0" layoutY="175.0" prefHeight="53.0" prefWidth="169.0" />
+      <Button layoutX="637.0" layoutY="353.0" mnemonicParsing="false" onAction="#backOAButton" text="Back" />
    </children>
 </AnchorPane>

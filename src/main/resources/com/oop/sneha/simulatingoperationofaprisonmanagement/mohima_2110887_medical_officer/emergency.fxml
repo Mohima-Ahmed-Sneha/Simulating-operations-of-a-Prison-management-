@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_medical_officer.emergencyController">
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_medical_officer.emergencyController">
    <children>
-      <Label layoutX="264.0" layoutY="25.0" text="Emergency  " />
+      <Label layoutX="366.0" layoutY="29.0" text="Emergency  ">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="inmateIDL" layoutX="66.0" layoutY="59.0" text="Inmate ID " />
+      <Label fx:id="emergencyTypeL" layoutX="59.0" layoutY="98.0" text="Emergency Type" />
+      <Label fx:id="actionsTakenL" layoutX="66.0" layoutY="138.0" text="Actions Taken" />
+      <Label fx:id="emergencyTableL" layoutX="239.0" layoutY="195.0" text="Emergency Table" />
+      <Button layoutX="404.0" layoutY="110.0" mnemonicParsing="false" onAction="#emergencyOAButton" text="Emergency Intervention" />
+      <TableView fx:id="emergencyTV" layoutX="116.0" layoutY="225.0" prefHeight="200.0" prefWidth="318.0">
+        <columns>
+          <TableColumn fx:id="inmateIDTC" prefWidth="114.0" text="Inmate ID" />
+          <TableColumn fx:id="emergencyTC" prefWidth="107.0" text="Emergency Type" />
+            <TableColumn fx:id="actionsTakenTC" prefWidth="93.0" text="Actions Taken " />
+        </columns>
+      </TableView>
+      <Label fx:id="statusL" layoutX="404.0" layoutY="146.0" prefHeight="40.0" prefWidth="241.0" />
+      <TextField fx:id="inmateIDTF" layoutX="144.0" layoutY="55.0" />
+      <ComboBox fx:id="emergencyCB" layoutX="185.0" layoutY="93.0" prefWidth="150.0" />
+      <TextArea fx:id="actionsTakenTA" layoutX="160.0" layoutY="128.0" prefHeight="54.0" prefWidth="200.0" />
+      <Button layoutX="514.0" layoutY="325.0" mnemonicParsing="false" onAction="#backOAButton" text="Back" />
    </children>
 </AnchorPane>
