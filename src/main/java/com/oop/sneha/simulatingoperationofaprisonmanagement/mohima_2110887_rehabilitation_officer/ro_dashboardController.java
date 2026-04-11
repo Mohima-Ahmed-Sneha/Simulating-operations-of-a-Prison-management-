@@ -38,6 +38,22 @@ public class ro_dashboardController
 
     @javafx.fxml.FXML
     public void enrollOAButton(ActionEvent actionEvent) {
+
+        Parent root = null;
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource( "/com/oop/sneha/simulatingoperationofaprisonmanagement/mohima_2110887_rehabilitation_officer/enroll_inmate.fxml"));
+            root = fxmlLoader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Rehabilitation Officer");
+        stage.show();
+
     }
 
     @javafx.fxml.FXML
