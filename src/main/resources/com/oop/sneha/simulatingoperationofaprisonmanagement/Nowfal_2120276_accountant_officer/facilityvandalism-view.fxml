@@ -9,12 +9,13 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_accountant_officer.facilityvadalism_controller">
    <children>
-      <Label alignment="CENTER" layoutX="110.0" layoutY="14.0" prefHeight="38.0" prefWidth="380.0" text="Penalty for Facility Vandalism" />
+      <Label alignment="CENTER" layoutX="110.0" layoutY="14.0" prefHeight="54.0" prefWidth="399.0" text="Penalty for Facility Vandalism" />
       <Label layoutX="58.0" layoutY="78.0" text="Inmate ID" />
       <TextField fx:id="inmateIdText" layoutX="151.0" layoutY="74.0" />
       <Label layoutX="58.0" layoutY="135.0" text="Inventory" />
       <ComboBox fx:id="inventoryCombo" layoutX="151.0" layoutY="131.0" prefWidth="150.0" />
-      <Label fx:id="displayLabel" layoutX="70.0" layoutY="200.0" prefHeight="155.0" prefWidth="435.0" style="-fx-background-color: yellow;" text="Display" />
-      <Button layoutX="335.0" layoutY="75.0" mnemonicParsing="false" onAction="#calculatebutton" prefHeight="82.0" prefWidth="133.0" text="Button" />
+      <Label fx:id="displayLabel" alignment="CENTER" layoutX="70.0" layoutY="200.0" prefHeight="155.0" prefWidth="435.0" style="-fx-background-color: yellow;" text="Display" />
+      <Button layoutX="335.0" layoutY="71.0" mnemonicParsing="false" onAction="#calculatebutton" prefHeight="86.0" prefWidth="142.0" text="Calculate" />
+      <Button layoutX="524.0" layoutY="131.0" mnemonicParsing="false" onAction="#backButtom" text="Back" />
    </children>
 </AnchorPane>

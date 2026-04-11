@@ -15,5 +15,6 @@
       <Button layoutX="429.0" layoutY="162.0" mnemonicParsing="false" onAction="#utilityButton" text="Utility" />
       <Button layoutX="291.0" layoutY="162.0" mnemonicParsing="false" onAction="#taxcomlianceButton" text="Tax Compliance" />
       <Label alignment="CENTER" layoutX="17.0" layoutY="21.0" prefHeight="48.0" prefWidth="571.0" style="-fx-background-color: white;" text="Accountant Officer" />
+      <Button layoutX="229.0" layoutY="279.0" mnemonicParsing="false" onAction="#signoutButton" text="sign out" />
    </children>
 </AnchorPane>
