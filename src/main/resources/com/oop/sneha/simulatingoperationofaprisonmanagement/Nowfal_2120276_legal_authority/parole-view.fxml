@@ -16,5 +16,6 @@
       <Button layoutX="176.0" layoutY="200.0" mnemonicParsing="false" onAction="#paroleButton" text="Calculate" />
       <Label fx:id="paroleLabel" alignment="CENTER" layoutX="41.0" layoutY="267.0" prefHeight="110.0" prefWidth="332.0" style="-fx-background-color: white;" text="Result" />
       <Label alignment="CENTER" layoutX="6.0" layoutY="6.0" prefHeight="45.0" prefWidth="402.0" text="Inmate Parole Eligibility" />
+      <Button layoutX="67.0" layoutY="200.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
    </children>
 </AnchorPane>

@@ -8,10 +8,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="459.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_legal_authority.facilityTransfer_controller">
    <children>
-      <TextField fx:id="inmateIdText" layoutX="93.0" layoutY="63.0" />
+      <TextField fx:id="inmateIdText" layoutX="92.0" layoutY="63.0" />
       <Label alignment="CENTER" layoutX="7.0" layoutY="5.0" prefHeight="56.0" prefWidth="424.0" text="Inter-Facility Transfer" />
       <Label layoutX="25.0" layoutY="67.0" text="InmateID" />
       <Label layoutX="31.0" layoutY="107.0" text="Facility" />
@@ -26,5 +25,6 @@
             <TableColumn fx:id="trasportteamTable" prefWidth="156.79998779296875" text="Trasport Team" />
         </columns>
       </TableView>
+      <Button layoutX="311.0" layoutY="63.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
    </children>
 </AnchorPane>

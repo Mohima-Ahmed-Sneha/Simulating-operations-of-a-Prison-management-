@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="410.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_legal_authority.release_controller">
    <children>
       <TextField fx:id="inmateIdText" layoutX="146.0" layoutY="44.0" />
@@ -19,5 +18,6 @@
       <Label fx:id="statusLabel" alignment="CENTER" layoutX="11.0" layoutY="238.0" prefHeight="18.0" prefWidth="398.0" text="Status" />
       <Label fx:id="certificateLabel" alignment="CENTER" layoutX="14.0" layoutY="273.0" prefHeight="122.0" prefWidth="398.0" style="-fx-background-color: white;" text="Certificate" />
       <Button layoutX="165.0" layoutY="192.0" mnemonicParsing="false" onAction="#finalizeButton" text="Finalize" />
+      <Button layoutX="345.0" layoutY="36.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
    </children>
 </AnchorPane>

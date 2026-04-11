@@ -12,7 +12,8 @@
       <Label layoutX="32.0" layoutY="130.0" text="Probable Cause" />
       <TextField fx:id="probableCauseText" layoutX="134.0" layoutY="126.0" />
       <Button layoutX="328.0" layoutY="95.0" mnemonicParsing="false" onAction="#searchwarrantButton" text="Search warrant" />
-      <Label fx:id="signedwarrantLabel" alignment="CENTER" layoutX="21.0" layoutY="200.0" prefHeight="182.0" prefWidth="418.0" style="-fx-background-color: white;" text="Signed Warrant" />
+      <Label fx:id="signedwarrantLabel" alignment="CENTER" layoutX="21.0" layoutY="166.0" prefHeight="182.0" prefWidth="418.0" style="-fx-background-color: white;" text="Signed Warrant" />
       <Label alignment="CENTER" layoutX="2.0" layoutY="14.0" prefHeight="18.0" prefWidth="454.0" text="Issue an Evidentiary Search Warrant" />
+      <Button layoutX="196.0" layoutY="361.0" mnemonicParsing="false" onAction="#backButton" text="BACK" />
    </children>
 </AnchorPane>

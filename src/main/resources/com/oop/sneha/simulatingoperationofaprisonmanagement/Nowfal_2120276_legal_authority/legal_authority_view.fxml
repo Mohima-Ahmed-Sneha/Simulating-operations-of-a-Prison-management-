@@ -15,5 +15,6 @@
       <Button layoutX="458.0" layoutY="94.0" mnemonicParsing="false" onAction="#ParoleButton" text="Parole" />
       <Button layoutX="174.0" layoutY="164.0" mnemonicParsing="false" onAction="#IncidentButton" text="use-of-force incident" />
       <Button layoutX="458.0" layoutY="164.0" mnemonicParsing="false" onAction="#ReleaseButton" text="Release " />
+      <Button layoutX="253.0" layoutY="247.0" mnemonicParsing="false" onAction="#signoutButton" prefHeight="26.0" prefWidth="73.0" text="Sign Out" />
    </children>
 </AnchorPane>
