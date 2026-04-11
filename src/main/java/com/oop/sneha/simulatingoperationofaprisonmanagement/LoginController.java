@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class LoginController
 {
@@ -36,54 +37,64 @@ public class LoginController
     @javafx.fxml.FXML
     public void loginOAButton(ActionEvent actionEvent) {
 
+        String id = userIDTF.getText();
+        String password = passwordPF.getText();
+
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+
+        // ✅ Validation FIRST
+        if (id.isBlank()) {
+            errorAlert.setContentText("User ID cannot be blank");
+            errorAlert.showAndWait();
+            return;
+        }
+
+        if (password.isBlank()) {
+            errorAlert.setContentText("Password cannot be blank");
+            errorAlert.showAndWait();
+            return;
+        }
+
         Parent root = null;
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource( "/com/oop/sneha/simulatingoperationofaprisonmanagement/mohima_2110887_medical_officer/medical_officer_dashboard.fxml"));
-            root = fxmlLoader.load();
+            // ✅ THEN decide dashboard
+            if (id.length() == 7) {
+                // Medical Officer
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(
+                        "/com/oop/sneha/simulatingoperationofaprisonmanagement/mohima_2110887_medical_officer/medical_officer_dashboard.fxml"
+                )));
+
+            } else if (id.length() == 6) {
+                // Rehabilitation Officer
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(
+                        "/com/oop/sneha/simulatingoperationofaprisonmanagement/mohima_2110887_rehabilitation_officer/ro_dashboard.fxml"
+                )));
+
+            } else if (id.length() == 5) {
+                // Rehabilitation Officer
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(
+                        "/com/oop/sneha/simulatingoperationofaprisonmanagement/Nowfal_2120276_accountant_officer/accountant_officer_view.fxml"
+                )));
+            } else if (id.length() == 4) {
+                // Rehabilitation Officer
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(
+                        "/com/oop/sneha/simulatingoperationofaprisonmanagement/Nowfal_2120276_legal_authority/legal_authority_view.fxml"
+                )));
+            } else {errorAlert.setContentText("User ID Type Does Not Exist");
+                errorAlert.showAndWait();
+                return;
+            }
+
+            // ✅ Switch scene
+            Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        Scene scene = new Scene(root);
-        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.setTitle("Medical Officer");
-        stage.show();
-
-
-        String  id, password ;
-        boolean flag = true ;
-
-        Alert errotalert = new Alert(Alert.AlertType.ERROR);
-
-        id = userIDTF.getText();
-        password = passwordPF.getText() ;
-
-        if (id.isBlank()){
-            flag = false ;
-            errotalert.setTitle("User ID Error");
-            errotalert.setContentText("User ID cannot be blank");
-            errotalert.showAndWait() ;
-        }
-
-        if (password.isBlank()){
-            flag = false ;
-            errotalert.setTitle("Password Error");
-            errotalert.setContentText("Password cannot be blank");
-            errotalert.showAndWait() ;
-        }
-
-        if (flag){
-            if (id.length() == 7){
-                //        login as a medical officer
-            } else if (id.length() == 6) {
-                //        login as a rehabilitation officer
-            } else {
-                errotalert.setTitle("USER ID Error");
-                errotalert.setContentText("User ID Type Does Not Exist");
-                errotalert.showAndWait() ;
-            }
-        }
     }
 }
+
+
