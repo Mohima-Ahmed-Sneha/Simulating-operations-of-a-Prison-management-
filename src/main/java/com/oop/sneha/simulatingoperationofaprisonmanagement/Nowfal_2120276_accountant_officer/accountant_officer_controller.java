@@ -50,6 +50,21 @@ public class accountant_officer_controller
 
     @javafx.fxml.FXML
     public void payrollButton(ActionEvent actionEvent) {
+        Parent root = null;
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource( "/com/oop/sneha/simulatingoperationofaprisonmanagement/Nowfal_2120276_accountant_officer/payroll-view.fxml"));
+            root = fxmlLoader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("login");
+        stage.show();
+
     }
 
     @javafx.fxml.FXML
@@ -62,6 +77,22 @@ public class accountant_officer_controller
 
     @javafx.fxml.FXML
     public void grantfundingButton(ActionEvent actionEvent) {
+
+        Parent root = null;
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource( "/com/oop/sneha/simulatingoperationofaprisonmanagement/Nowfal_2120276_accountant_officer/grantfunding-view.fxml"));
+            root = fxmlLoader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("login");
+        stage.show();
+
     }
 
     @javafx.fxml.FXML

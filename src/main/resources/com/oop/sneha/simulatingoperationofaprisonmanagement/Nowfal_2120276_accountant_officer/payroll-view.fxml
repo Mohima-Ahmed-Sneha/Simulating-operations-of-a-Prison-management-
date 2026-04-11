@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.Nowfal_2120276_accountant_officer.payroll_controller">
    <children>
       <Label alignment="CENTER" layoutX="14.0" layoutY="17.0" prefHeight="54.0" prefWidth="486.0" style="-fx-background-color: white;" text="Generate Monthly Facility Payroll" />
@@ -15,7 +14,7 @@
       <Label layoutX="35.0" layoutY="146.0" text="Work Hour" />
       <TextField fx:id="inmateIdText" layoutX="117.0" layoutY="98.0" />
       <TextField fx:id="workhourText" layoutX="117.0" layoutY="142.0" />
-      <Button layoutX="314.0" layoutY="142.0" mnemonicParsing="false" onAction="#payrollsubmitButton" prefHeight="26.0" prefWidth="126.0" text="Submit" />
+      <Button layoutX="289.0" layoutY="97.0" mnemonicParsing="false" onAction="#payrollsubmitButton" prefHeight="71.0" prefWidth="126.0" text="Submit" />
       <TableView fx:id="payrollTableView" layoutX="39.0" layoutY="186.0" prefHeight="200.0" prefWidth="451.0">
         <columns>
           <TableColumn fx:id="basehourTC" prefWidth="64.00000381469727" text="BaseHour" />
@@ -26,5 +25,6 @@
             <TableColumn fx:id="annualbudgercapTC" prefWidth="117.60002441406249" text="AnnualBudgetCap" />
         </columns>
       </TableView>
+      <Button layoutX="448.0" layoutY="143.0" mnemonicParsing="false" onAction="#backButton" prefHeight="26.0" prefWidth="42.0" text="Back" />
    </children>
 </AnchorPane>
