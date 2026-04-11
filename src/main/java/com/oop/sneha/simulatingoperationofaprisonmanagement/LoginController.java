@@ -71,8 +71,17 @@ public class LoginController
                         "/com/oop/sneha/simulatingoperationofaprisonmanagement/mohima_2110887_rehabilitation_officer/ro_dashboard.fxml"
                 )));
 
-            } else {
-                errorAlert.setContentText("User ID Type Does Not Exist");
+            } else if (id.length() == 5) {
+                // Rehabilitation Officer
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(
+                        "/com/oop/sneha/simulatingoperationofaprisonmanagement/Nowfal_2120276_accountant_officer/accountant_officer_view.fxml"
+                )));
+            } else if (id.length() == 4) {
+                // Rehabilitation Officer
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(
+                        "/com/oop/sneha/simulatingoperationofaprisonmanagement/Nowfal_2120276_legal_authority/legal_authority_view.fxml"
+                )));
+            } else {errorAlert.setContentText("User ID Type Does Not Exist");
                 errorAlert.showAndWait();
                 return;
             }
