@@ -62,7 +62,7 @@ public class checkupController
         String symptoms = symptomsTF.getText();
         LocalDate date = dateDP.getValue();
 
-        // ❌ Validation
+
         if (inmateId.isEmpty() || symptoms.isEmpty() || date == null) {
             statusL.setText("Invalid: Fill all fields");
             return;
@@ -74,22 +74,22 @@ public class checkupController
             return;
         }
 
-        // ✅ Create CheckUp object
+
         Checkup record = new Checkup(
                 inmateId,
                 symptoms,
                 date.toString()
         );
 
-        // ✅ Save + display
+
         recordList.add(record);
         checkUpRecTV.getItems().add(record);
 
 
-        // ✅ Success message
+
         statusL.setText("Check-Up Recorded Successfully");
 
-        // 🧼 Clear fields
+
         inmateIDTF.clear();
         symptomsTF.clear();
         dateDP.setValue(null);

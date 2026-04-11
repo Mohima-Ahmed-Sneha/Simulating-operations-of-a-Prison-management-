@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_rehabilitation_officer.view_historyController">
    <children>
       <Label fx:id="inmateIDL" layoutX="57.0" layoutY="72.0" text="Inmate_ID" />
@@ -25,5 +24,6 @@
       </TableView>
       <TextField fx:id="inmateIDTF" layoutX="140.0" layoutY="68.0" />
       <Label layoutX="241.0" layoutY="23.0" prefHeight="26.0" prefWidth="141.0" text="Rehabilitation History" />
+      <Button layoutX="497.0" layoutY="347.0" mnemonicParsing="false" onAction="#backOAButton" text="Back" />
    </children>
 </AnchorPane>

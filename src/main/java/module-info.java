@@ -3,6 +3,7 @@ module com.oop.sneha.simulatingoperationofaprisonmanagement {
     requires javafx.fxml;
     requires java.desktop;
     requires javafx.graphics;
+    requires jdk.httpserver;
 
 
     opens com.oop.sneha.simulatingoperationofaprisonmanagement to javafx.fxml;

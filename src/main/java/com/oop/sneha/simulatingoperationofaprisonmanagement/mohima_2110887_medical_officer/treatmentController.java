@@ -80,19 +80,19 @@ public class treatmentController
         String modification = treatmentModfCB.getValue();
         String currentPlan = currentPlanTA.getText();
 
-        // ❌ Validation
+
         if (inmateId.isEmpty() || modification == null || currentPlan.isEmpty()) {
             statusL.setText("Invalid: Fill all fields");
             return;
         }
 
-        // 🔍 Check active treatment (dummy logic)
+
         if (!isActiveTreatment(inmateId)) {
             statusL.setText("No active treatment plan found");
             return;
         }
 
-        // 📌 Create update object
+
         Treatment update = new Treatment(
                 inmateId,
                 currentPlan,
@@ -100,15 +100,15 @@ public class treatmentController
                 "UPDATED"
         );
 
-        // 💾 Store + display
+
         treatmentList.add(update);
         updatedPlanTV.setItems(treatmentList);
         updatedPlanTV.refresh();
 
-        // 📄 Show summary
+
         statusL.setText("Treatment Plan Updated Successfully");
 
-        // 🧼 Clear inputs
+
         inmateIDTF.clear();
         currentPlanTA.clear();
         treatmentModfCB.setValue(null);

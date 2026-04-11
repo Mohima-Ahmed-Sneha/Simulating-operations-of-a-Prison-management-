@@ -83,30 +83,29 @@ public class emergencyController
         String type = emergencyCB.getValue();
         String action = actionsTakenTA.getText();
 
-        // ❌ Validation
+
         if (inmateId.isEmpty() || type == null || action.isEmpty()) {
             statusL.setText("Invalid: Fill all fields");
             return;
         }
 
 
-        // ✅ Priority always HIGH for emergency
+
         String priority = "HIGH";
 
-        // ✅ Create Emergency object
         Emergency emergency = new Emergency(
                 inmateId,
                 type,
                 action
         );
 
-        // ✅ Add to TableView
+
         emergencyTV.getItems().add(emergency);
 
-        // ✅ Confirmation message
+
         statusL.setText("Emergency Intervention Logged");
 
-        // 🧼 Clear fields
+
         inmateIDTF.clear();
         emergencyCB.setValue(null);
         actionsTakenTA.clear();

@@ -72,7 +72,7 @@ public class inventoryController
         String itemName = itemNameTF.getText();
 
 
-        // ❌ Validation
+
         if (itemName.isEmpty() ||
                 quantityAddedTF.getText().isEmpty() ||
                 quantityUsedTF.getText().isEmpty()) {
@@ -90,7 +90,7 @@ public class inventoryController
                 return;
             }
 
-            // ✅ Create object
+
             Inventory item = new Inventory(
                     itemName,
                     added,
@@ -98,18 +98,18 @@ public class inventoryController
             );
 
 
-            // ✅ Store + display
+
             inventoryList.add(item);
             inventoryTV.getItems().add(item);
 
-            // ✅ Show remaining in TextField
+
             currentStockTF.setText(String.valueOf(item.getRemaining()));
 
-            // ✅ Success message
+
             statusL.setText("Inventory Updated Successfully");
 
 
-            // 🧼 Clear inputs
+
             itemNameTF.clear();
             quantityAddedTF.clear();
             quantityUsedTF.clear();

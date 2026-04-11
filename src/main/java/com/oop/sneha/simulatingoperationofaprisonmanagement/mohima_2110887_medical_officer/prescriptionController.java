@@ -75,20 +75,20 @@ public class prescriptionController
         String frequency = frequencyTF.getText();
         LocalDate date = dateDP.getValue();
 
-        // ❌ Validation
+
         if (inmateId.isEmpty() || meds.isEmpty() || dosage.isEmpty()
                 || frequency.isEmpty() || date == null) {
             statusL.setText("Invalid: Fill all fields");
             return;
         }
 
-        // 🔍 Validate dosage (simple rule)
+
         if (!isValidDosage(dosage)) {
             statusL.setText("Invalid dosage format");
             return;
         }
 
-        // 📌 Create object
+
         Prescription prescription = new Prescription(
                 inmateId,
                 meds,
@@ -97,12 +97,12 @@ public class prescriptionController
                 date.toString()
         );
 
-        // 💾 Store + display
+
         prescriptionList.add(prescription);
 
         statusL.setText("Prescription Added Successfully");
 
-        // 🧼 Clear inputs
+
         inmateIDTF.clear();
         medsNameTF.clear();
         dosageTF.clear();

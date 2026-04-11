@@ -71,19 +71,19 @@ public class medical_reportController
         String fromDate = (startDateDP.getValue() != null) ? startDateDP.getValue().toString() : null;
         String toDate = (endDateDP.getValue() != null) ? endDateDP.getValue().toString() : null;
 
-        // ❌ Validation
+
         if (inmateId.isEmpty() || fromDate == null || toDate == null) {
             statusL.setText("Invalid: Fill all fields");
             return;
         }
 
-        // 🔍 Check inmate exists (dummy validation)
+
         if (!isValidInmate(inmateId)) {
             statusL.setText("Invalid Inmate ID");
             return;
         }
 
-        // 📊 Simulated medical data (you can replace with real data later)
+
         String reportDetails =
                 "===== MEDICAL REPORT =====\n" +
                         "Inmate ID: " + inmateId + "\n\n" +
@@ -92,7 +92,7 @@ public class medical_reportController
                         "Health Trend:\n- Stable condition\n" +
                         "No critical issues detected\n";
 
-        // ✅ Create Report object
+
         Medical_report report = new Medical_report(
                 inmateId,
                 fromDate,
@@ -100,23 +100,23 @@ public class medical_reportController
                 reportDetails
         );
 
-        // 💾 Store report
+
         medicalreportList.add(report);
 
-        // 📄 Display in TextArea
+
         reportsTA.setText(reportDetails);
 
-        // ✅ Success message
+
         statusL.setText("Medical Report Generated Successfully");
 
-        // 🧼 Clear inputs
+
         inmateIDTF.clear();
         startDateDP.setValue(null);
         endDateDP.setValue(null);
     }
 
 
-    // 🔹 Dummy inmate validation
+
     private boolean isValidInmate(String inmateId) {
         return inmateId.startsWith("IN"); // simple rule
     }

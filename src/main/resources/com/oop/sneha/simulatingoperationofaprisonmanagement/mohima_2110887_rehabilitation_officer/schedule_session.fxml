@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_rehabilitation_officer.ScheduleSessionController">
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sneha.simulatingoperationofaprisonmanagement.mohima_2110887_rehabilitation_officer.ScheduleSessionController">
    <children>
-      <Label layoutX="260.0" layoutY="43.0" text="Schedule Session " />
+      <Label layoutX="243.0" layoutY="38.0" text="Schedule Counselling Session">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="88.0" text="Inmate ID" />
+      <Label layoutX="109.0" layoutY="119.0" text="Date" />
+      <Label layoutX="109.0" layoutY="151.0" text="Time" />
+      <Label layoutX="109.0" layoutY="188.0" text="Counsellor Name" />
+      <Label fx:id="statusL" layoutX="214.0" layoutY="285.0" prefHeight="30.0" prefWidth="200.0" text="Label" />
+      <Label fx:id="availabilityL" layoutX="214.0" layoutY="328.0" prefHeight="30.0" prefWidth="174.0" text="Label" />
+      <Label fx:id="confirmL" layoutX="214.0" layoutY="374.0" prefHeight="30.0" prefWidth="160.0" text="Label" />
+      <Button layoutX="237.0" layoutY="236.0" mnemonicParsing="false" onAction="#sessionOAButton" text="Schedule Session Button" />
+      <Button layoutX="531.0" layoutY="391.0" mnemonicParsing="false" onAction="#backOAButton" text="Back" />
+      <TextField fx:id="inmateIDTF" layoutX="249.0" layoutY="84.0" />
+      <TextField fx:id="counsellorNameTF" layoutX="249.0" layoutY="184.0" />
+      <DatePicker fx:id="dateDP" layoutX="241.0" layoutY="115.0" />
+      <ComboBox fx:id="timeCB" layoutX="254.0" layoutY="147.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

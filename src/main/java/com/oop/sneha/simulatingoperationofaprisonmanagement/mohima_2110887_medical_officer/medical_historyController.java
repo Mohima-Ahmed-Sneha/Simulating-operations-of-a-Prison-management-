@@ -48,7 +48,7 @@ public class medical_historyController
 
         historyTV.setItems(historyList);
 
-        // Column mapping
+
         checkupsTC.setCellValueFactory(data ->
                 new SimpleStringProperty(data.getValue().getCheckups()));
 
@@ -61,7 +61,7 @@ public class medical_historyController
         recordstc.setCellValueFactory(data ->
                 new SimpleStringProperty(data.getValue().getRecords()));
 
-        // 🔹 Dummy data
+
         ObservableList<Medical_history> inmate1 = FXCollections.observableArrayList(
                 new Medical_history("3 Checkups", "Pain management", "Paracetamol", "Stable"),
                 new Medical_history("Follow-up", "Wound care", "Antibiotics", "Recovering")
@@ -87,7 +87,7 @@ public class medical_historyController
             return;
         }
 
-        // 🔹 Load data
+
         ObservableList<Medical_history> records = database.get(inmateId);
         historyList.setAll(records);
 

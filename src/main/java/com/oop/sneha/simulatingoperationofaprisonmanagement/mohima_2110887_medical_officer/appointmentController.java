@@ -67,7 +67,7 @@ public class appointmentController
         reasonTC.setCellValueFactory(data ->
                 new SimpleStringProperty(data.getValue().getReason()));
 
-        // Time options
+
         timeCB.getItems().addAll("09:00", "10:00", "11:00", "12:00");
 
 
@@ -81,19 +81,19 @@ public class appointmentController
         String time = (String) timeCB.getValue();
         String reason = reasonTA.getText();
 
-        // Check empty fields
+
         if (inmateId.isEmpty() || date == null || time == null) {
             statusL.setText("Invalid: Fill all fields");
             return;
         }
 
-        //  Check past date
+
         if (date.isBefore(LocalDate.now())) {
             statusL.setText("Invalid: Date is in the past");
             return;
         }
 
-        //  Check time conflict
+
         for (Appointment a : appointmentList) {
             if (a.getDate().equals(date.toString()) &&
                     a.getTime().equals(time)) {
@@ -103,7 +103,7 @@ public class appointmentController
             }
         }
 
-        // ✅ Create appointment (reason = empty)
+
         Appointment newApp = new Appointment(
                 inmateId,
                 date.toString(),
@@ -111,14 +111,14 @@ public class appointmentController
                 reason
         );
 
-        // Save + display
+
         appointmentList.add(newApp);
         appListTV.getItems().add(newApp);
 
-        // Success message
+
         statusL.setText("Appointment Scheduled Successfully");
 
-        // Clear inputs
+
         inmateIDTF.clear();
         dateDP.setValue(null);
         timeCB.setValue(null);

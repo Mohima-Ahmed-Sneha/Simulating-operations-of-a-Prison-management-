@@ -64,19 +64,19 @@ public class enroll_inmateController
             return;
         }
 
-        // Convert date to string
+
         String date = dateDP.getValue().toString();
 
-        // Create object
+
         Enroll_inmate enroll = new Enroll_inmate(inmateId, programmeId, date);
 
-        // Add to table
+
         enrollmentList.add(enroll);
 
-        // Success message
+
         statusL.setText("Enrollment Successful!");
 
-        // Clear fields
+
         inmateIDTF.clear();
         programmeTF.clear();
         dateDP.setValue(null);
